@@ -9,8 +9,8 @@ const player = new Player(iframe);
 player.on('timeupdate', throttle(onPlay, 1000));
 
 function onPlay({ seconds }) {
-  console.log(localStorage.setItem(CURRENT_TIME_KEY, seconds));
-  // localStorage.setItem(CURRENT_TIME_KEY, seconds);
+  // console.log(localStorage.setItem(CURRENT_TIME_KEY, seconds));
+  localStorage.setItem(CURRENT_TIME_KEY, seconds);
 }
 
 player
